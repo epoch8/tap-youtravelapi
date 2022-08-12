@@ -16,7 +16,7 @@ SCHEMAS_DIR = Path(__file__).parent / Path("./schemas")
 class ToursStream(YoutravelApiStream):
     """Define custom stream."""
     name = "tours"
-    path = "/serp/tours/?currency=rub&lang=en&take=10"
+    path = "/serp/tours/?currency=rub&lang=en&take=10000"
     primary_keys = ["id"]
     replication_key = None
 
