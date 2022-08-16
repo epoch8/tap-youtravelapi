@@ -73,3 +73,8 @@ class ToursStream(YoutravelApiStream):
         th.Property("cashback_mir", th.BooleanType),
         th.Property("is_latest", th.BooleanType),
     ).to_dict()
+
+
+class ToursRuStream(ToursStream):
+    name = "tours_ru"
+    path = "/serp/tours/?currency=rub&lang=ru&take=10000"
